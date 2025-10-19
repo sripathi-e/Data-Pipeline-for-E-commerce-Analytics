@@ -17,13 +17,13 @@ The goal is to simulate a real-world retail data pipeline where we:
 
 We use 3 CSV files (public dataset):
 
-1. Customers Table
+1. Customers Table: 
       customer_id (PK), customer_fname, customer_lname, customer_email, …
 
-2. Orders Table
+2. Orders Table: 
       order_id (PK), order_date, order_customer_id (FK → customer_id), order_status
 
-3. Order_Items Table
+3. Order_Items Table: 
       order_item_id (PK), order_item_order_id (FK → order_id), order_item_product_id, order_item_quantity, order_item_subtotal, order_item_product_price
 
 👉 Relationships:
