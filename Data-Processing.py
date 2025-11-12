@@ -89,8 +89,3 @@ monthly_revenue = full_df.withColumn("order_year", year("order_date").cast("int"
     .orderBy("customer_id","order_year","order_month")
 
 monthly_revenue.show(20, False)
-
-# ----------------------------
-# End Spark
-# ----------------------------
-spark.stop()
